@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CodeMirror from '@uiw/react-codemirror';
 import { cpp } from '@codemirror/lang-cpp';
-import { oneDark } from '@codemirror/theme-one-dark';
+//import { oneDark } from '@codemirror/theme-one-dark';
 
 function CodeSandbox() {
   // 这里存放的是沙箱默认显示的 C 语言代码
@@ -26,7 +26,7 @@ int main() {
         <CodeMirror
           value={code}
           height="400px"
-          theme={oneDark}
+      
           extensions={[cpp()]} 
           onChange={handleCodeChange}
           style={{ fontSize: '16px' }} // 字体稍微调大一点，适合教学演示
